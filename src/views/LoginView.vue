@@ -164,7 +164,7 @@ export default defineComponent({
 }
 
 .primary--text {
-  color: #4db6ac !important; /* Vuetify primary color */
+  color: #4db6ac !important;
 }
 
 .mx-auto {

@@ -9,8 +9,8 @@
     "preview": "vite preview"
   },
   "dependencies": {
+    "@cypress/vue": "^6.0.2",
     "@mdi/font": "^7.4.47",
-    "axios": "^1.8.3",
     "lodash": "^4.17.21",
     "pinia": "^3.0.1",
     "vue": "^3.5.13",

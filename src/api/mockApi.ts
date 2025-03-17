@@ -215,7 +215,7 @@ export const mockApi = {
       lastLogin: userData.lastLogin || new Date().toISOString(),
     };
     mockUsers.push(newUser);
-    localStorage.setItem("mockUsers", JSON.stringify(mockUsers)); // Persist changes
+    localStorage.setItem("mockUsers", JSON.stringify(mockUsers));
     console.log("User created in mockApi:", newUser);
     return newUser;
   },
@@ -226,7 +226,7 @@ export const mockApi = {
     const userIndex = mockUsers.findIndex((u) => u.id === id);
     if (userIndex === -1) throw new Error("User not found");
     mockUsers.splice(userIndex, 1);
-    localStorage.setItem("mockUsers", JSON.stringify(mockUsers)); // Persist changes
+    localStorage.setItem("mockUsers", JSON.stringify(mockUsers));
   },
 
   async getRoles(): Promise<Role[]> {

@@ -1,4 +1,3 @@
-<!-- src/components/UserControl/DeleteComponent.vue -->
 <template>
   <v-dialog max-width="500">
     <template v-slot:activator="{ props: activatorProps }">

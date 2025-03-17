@@ -32,7 +32,6 @@ export default defineComponent({
       }
     });
 
-    // Handle user updated event (e.g., redirect back to UsersView)
     const handleUserUpdated = () => {
       router.push("/"); // Redirect to UsersView after update
     };

@@ -43,7 +43,6 @@
 <script lang="ts">
 import { defineComponent, ref, computed, onMounted } from "vue";
 import { useUsersStore } from "../../stores/users";
-import debounce from "lodash/debounce";
 
 export default defineComponent({
   name: "RolesView",
@@ -71,12 +70,6 @@ export default defineComponent({
       );
     });
 
-    // Debounced search handler
-    const debouncedSearch = debounce(() => {
-      // No fetch needed, filtering is local
-      console.log("Searching for:", search.value);
-    }, 300);
-
     // Fetch roles on mount
     onMounted(async () => {
       await usersStore.fetchRoles();
@@ -87,12 +80,7 @@ export default defineComponent({
       search,
       headers,
       filteredRoles,
-      debouncedSearch,
     };
   },
 });
 </script>
-
-<style scoped>
-/* Optional custom styles */
-</style>

@@ -9,7 +9,6 @@ import { defineComponent, computed } from "vue";
 import { useRoute } from "vue-router";
 import DefaultLayout from "./layouts/DefaultLayout.vue";
 import AuthLayout from "./layouts/AuthLayout.vue";
-import vuetifyTest from "./components/vuetifyTest.vue";
 
 export default defineComponent({
   name: "App",
